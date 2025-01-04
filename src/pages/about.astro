@@ -3,9 +3,34 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 
 import ContactCTA from '../components/ContactCTA.astro';
 import Hero from '../components/Hero.astro';
+
+const skills = {
+	expertise: [
+		"BIM Modeling",
+		"Construction Documentation",
+		"3D Visualization & Rendering",
+		"As-Built Documentation",
+		"Construction Drawings",
+		"Building Code Analysis",
+		"Construction Detailing",
+		"Space Planning",
+		"Site Documentation",
+		"Point Cloud Processing"
+	],
+	software: [
+		"Revit",
+		"AutoCAD",
+		"SketchUp",
+		"Lumion",
+		"Enscape",
+		"V-Ray",
+		"SAP",
+		"Adobe Photoshop"
+	],
+}
 ---
 
-<BaseLayout title="About | Jeanine White" description="About Jeanine White Lorem Ipsum">
+<BaseLayout title="About | Sushma Shrestha" description="About Sushma Shrestha">
 	<div class="stack gap-20">
 		<main class="wrapper about">
 			<Hero
@@ -15,8 +40,8 @@ import Hero from '../components/Hero.astro';
 				<img
 					width="1553"
 					height="873"
-					src="/assets/at-work.jpg"
-					alt="Jeanine White at work with a colleague"
+					src="/profile.jpg"
+					alt="Sushma Shrestha"
 				/>
 			</Hero>
 
@@ -24,35 +49,42 @@ import Hero from '../components/Hero.astro';
 				<h2 class="section-title">Background</h2>
 				<div class="content">
 					<p>
-						Lorem ipsum dolor sit amet, <a href="https://astro.build/">Astro</a> makes people happy.
-						Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Proin nibh nisl condimentum
-						id venenatis a condimentum vitae. Dapibus ultrices in iaculis nunc. Arcu odio ut sem nulla
-						pharetra diam sit amet. Diam quis enim lobortis scelerisque fermentum dui faucibus in ornare.
+						I am a passionate and detail-oriented Architectural Technologist with a deep appreciation for innovative design and precision. My expertise spans a wide range of skills, including advanced CAD drafting, 3D modeling, and photorealistic rendering. I specialize in creating visually compelling and technically sound designs using tools like AutoCAD, Revit, SketchUp, Lumion, and V-Ray.
 					</p>
 					<p>
-						Arcu dui vivamus arcu felis bibendum ut tristique et egestas. Eget gravida cum sociis
-						natoque penatibus. Cras fermentum odio eu feugiat pretium nibh. Proin nibh nisl
-						condimentum id venenatis. Porta nibh venenatis cras sed felis eget velit. Id diam vel
-						quam elementum pulvinar etiam non.
+						With experience working in Canada and Nepal, I bring a diverse perspective to architectural and construction projects. My portfolio includes everything from precise technical drawings to immersive 3D visualizations that help clients bring their vision to life. I pride myself on staying updated with building codes, zoning laws, and fire regulations to ensure that my work not only meets but exceeds industry standards.
 					</p>
 					<p>
-						Ultrices tincidunt arcu non sodales neque sodales ut. Sed enim ut sem viverra aliquet
-						eget sit amet. Lacus luctus accumsan tortor posuere ac ut consequat semper viverra.
-						Viverra accumsan in nisl nisi scelerisque eu ultrices. In massa tempor nec feugiat nisl
-						pretium fusce.
+						Beyond my technical abilities, I am a collaborative team player who thrives in dynamic and challenging environments. I am committed to delivering designs that are not only aesthetically pleasing but also functional and sustainable.
 					</p>
 				</div>
 			</section>
 			<section>
 				<h2 class="section-title">Education</h2>
 				<div class="content">
-					<p>Corporis voluptates tenetur laudantium.</p>
+					<p>Postgraduate Certificate in Operations Management, Fanshawe College, Canada (2023), Dean’s Honour Rol</p>
+					<p>Postgraduate Certificate in Construction Project Management, Fanshawe College, Canada (2022), [Dean’s Honour Roll]</p>
+					<p>Bachelor’s in Architecture, Tribhuvan University, Nepal (2019)</p>
 				</div>
 			</section>
 			<section>
 				<h2 class="section-title">Skills</h2>
 				<div class="content">
-					<p>officia unde omnis</p>
+					{skills.expertise.map(skill => (
+						<span class="px-3 py-1 bg-gray-200 rounded-full text-sm text-gray-700">
+						  {skill}
+						</span>
+					  ))}
+				</div>
+			</section>
+			<section>
+				<h2 class="section-title">Software Proficiency</h2>
+				<div class="content">
+					{skills.software.map(skill => (
+                    <span class="px-3 py-1 bg-blue-100 rounded-full text-sm text-blue-800">
+						  {skill}
+						</span>
+					  ))}
 				</div>
 			</section>
 		</main>
