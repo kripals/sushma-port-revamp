@@ -2,12 +2,12 @@
 title: Residential Design Portfolio – Creating Homes with Comfort and Elegance
 publishDate: 2022-05-20 00:00:00
 img: [
-      "projects/3d-rendering-residentials/pic-8.jpg",
-      "projects/3d-rendering-residentials/pic-9.jpg",
-      "projects/3d-rendering-residentials/pic-3.jpg",
-      "projects/3d-rendering-residentials/pic-1.jpg",
-      "projects/3d-rendering-residentials/pic-6.jpg",
-      "projects/3d-rendering-residentials/pic-10.jpg",
+      "/assets/projects/3d-rendering-residentials/pic-8.jpg",
+      "/assets/projects/3d-rendering-residentials/pic-9.jpg",
+      "/assets/projects/3d-rendering-residentials/pic-3.jpg",
+      "/assets/projects/3d-rendering-residentials/pic-1.jpg",
+      "/assets/projects/3d-rendering-residentials/pic-6.jpg",
+      "/assets/projects/3d-rendering-residentials/pic-10.jpg"
 ]
 img_alt: [
       "Cozy living room with natural light and warm textures",

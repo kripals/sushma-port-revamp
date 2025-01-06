@@ -1,13 +1,13 @@
 ---
-title: Langtang Cheese Factory: A Blend of Tradition and Modern Design
+title: Langtang Cheese Factory - A Blend of Tradition and Modern Design
 publishDate: 2023-07-18 00:00:00
 img: [
-      "projects/langtang-cheese-factory/pic-7.jpg",
-      "projects/langtang-cheese-factory/pic-4.jpg",
-      "projects/langtang-cheese-factory/pic-10.jpg",
-      "projects/langtang-cheese-factory/pic-9.jpg",
-      "projects/langtang-cheese-factory/pic-11.jpg",
-      "projects/langtang-cheese-factory/pic-13.jpg",
+      "/assets/projects/langtang-cheese-factory/pic-7.jpg",
+      "/assets/projects/langtang-cheese-factory/pic-4.jpg",
+      "/assets/projects/langtang-cheese-factory/pic-10.jpg",
+      "/assets/projects/langtang-cheese-factory/pic-9.jpg",
+      "/assets/projects/langtang-cheese-factory/pic-11.jpg",
+      "/assets/projects/langtang-cheese-factory/pic-13.jpg"
 ]
 img_alt: [
       "Exterior view of Langtang Cheese Factory with its modern yet rustic facade",

@@ -2,12 +2,12 @@
 title: Children's Museum Design – A Place for Imagination and Exploration
 publishDate: 2024-01-10 00:00:00
 img: [
-      "projects/thesis/pic-2.jpg",
-      "projects/thesis/pic-4.jpg",
-      "projects/thesis/pic-7.jpg",
-      "projects/thesis/pic-9.jpg",
-      "projects/thesis/pic-5.jpg",
-      "projects/thesis/pic-6.jpg",
+      "/assets/projects/thesis/pic-2.jpg",
+      "/assets/projects/thesis/pic-4.jpg",
+      "/assets/projects/thesis/pic-7.jpg",
+      "/assets/projects/thesis/pic-9.jpg",
+      "/assets/projects/thesis/pic-5.jpg",
+      "/assets/projects/thesis/pic-6.jpg"
 ]
 img_alt: [
       "Interactive play area with colorful and child-friendly elements",

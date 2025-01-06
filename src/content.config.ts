@@ -10,8 +10,8 @@ export const collections = {
 			description: z.string(),
 			publishDate: z.coerce.date(),
 			tags: z.array(z.string()),
-			img: z.string(),
-			img_alt: z.string().optional(),
+			img: z.array(z.string()), // Allow array of strings for multiple images
+			img_alt: z.array(z.string()), // Allow array of strings for alt texts
 		}),
 	}),
 };

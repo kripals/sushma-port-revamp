@@ -2,12 +2,12 @@
 title: Cultural Heritage Park Design
 publishDate: 2020-03-04 00:00:00
 img: [
-      "projects/3d-park-rendering/pic-1.jpg",
-      "projects/3d-park-rendering/pic-2.jpg",
-      "projects/3d-park-rendering/pic-3.jpg",
-      "projects/3d-park-rendering/pic-4.jpg",
-      "projects/3d-park-rendering/pic-5.jpg",
-      "projects/3d-park-rendering/pic-6.jpg",
+      "/assets/projects/3d-park-rendering/pic-1.jpg",
+      "/assets/projects/3d-park-rendering/pic-2.jpg",
+      "/assets/projects/3d-park-rendering/pic-3.jpg",
+      "/assets/projects/3d-park-rendering/pic-4.jpg",
+      "/assets/projects/3d-park-rendering/pic-5.jpg",
+      "/assets/projects/3d-park-rendering/pic-6.jpg"
 ]
 img_alt: [
       "A detailed 3D rendering of a cultural heritage park",

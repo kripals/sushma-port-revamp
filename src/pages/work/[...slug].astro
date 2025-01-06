@@ -33,22 +33,37 @@ const { Content } = await render(entry);
 		<div class="stack gap-15">
 			<header>
 				<div class="wrapper stack gap-2">
-					<a class="back-link" href="/work/"><Icon icon="arrow-left" /> Work</a>
+					<a class="back-link" href="/work/" aria-label="Back to Work">
+						<Icon icon="arrow-left" /> Work
+					</a>
 					<Hero title={entry.data.title} align="start">
 						<div class="details">
 							<div class="tags">
-								{entry.data.tags.map((t) => <Pill>{t}</Pill>)}
+								{entry.data.tags.map((t, index) => (
+									<Pill key={index}>{t}</Pill>
+								))}
 							</div>
 							<p class="description">{entry.data.description}</p>
 						</div>
 					</Hero>
 				</div>
 			</header>
+
 			<main class="wrapper">
 				<div class="stack gap-10 content">
-					{entry.data.img && entry.data.img.map((imgSrc, index) => (
-						<img key={index} src={imgSrc} alt={entry.data.img_alt[index] || ''} />
-					))}
+					{entry.data.img &&
+						<div class="image-gallery">
+							{entry.data.img.map((image, index) => (
+								<img
+									key={index}
+									src={image}
+									alt={entry.data.img_alt && entry.data.img_alt[index] ? entry.data.img_alt[index] : ''}
+									loading="lazy"
+									decoding="async"
+								/>
+							))}
+						</div>
+					}
 					<div class="content">
 						<Content />
 					</div>
@@ -66,26 +81,57 @@ const { Content } = await render(entry);
 	}
 
 	.back-link {
-		display: none;
+		display: block;
+		align-self: flex-start;
+		font-size: var(--text-md);
+		color: var(--gray-400);
+		text-decoration: none;
+	}
+
+	.back-link:hover,
+	.back-link:focus {
+		color: var(--gray-200);
+		text-decoration: underline;
 	}
 
 	.details {
 		display: flex;
 		flex-direction: column;
-		padding: 0.5rem;
+		align-items: flex-start;
 		gap: 1.5rem;
-		justify-content: space-between;
-		align-items: center;
 	}
 
 	.tags {
 		display: flex;
+		flex-wrap: wrap;
 		gap: 0.5rem;
 	}
 
 	.description {
-		font-size: var(--text-lg);
-		max-width: 54ch;
+		font-size: var(--text-md);
+		line-height: 1.6;
+		color: var(--gray-300);
+		max-width: 60ch;
+	}
+
+	.image-gallery {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+		gap: 1rem;
+		margin-top: 1.5rem;
+	}
+
+	.image-gallery img {
+		width: 100%;
+		border-radius: 1rem;
+		box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+		background-color: var(--gray-900);
+		transition: transform 0.3s ease, box-shadow 0.3s ease;
+	}
+
+	.image-gallery img:hover {
+		transform: scale(1.05);
+		box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
 	}
 
 	.content {
@@ -106,49 +152,51 @@ const { Content } = await render(entry);
 	}
 
 	.content :global(img) {
-		border-radius: 1.5rem;
+		border-radius: 1rem;
 		box-shadow: var(--shadow-sm);
 		background: var(--gradient-subtle);
 		border: 1px solid var(--gray-800);
 	}
 
 	.content :global(blockquote) {
-		font-size: var(--text-lg);
+		font-size: var(--text-md);
 		font-family: var(--font-brand);
 		font-weight: 600;
 		line-height: 1.1;
 		padding-inline-start: 1.5rem;
 		border-inline-start: 0.25rem solid var(--accent-dark);
 		color: var(--gray-0);
+		margin: 2rem 0;
 	}
 
-	.back-link,
 	.content :global(a) {
-		text-decoration: 1px solid underline transparent;
-		text-underline-offset: 0.25em;
-		transition: text-decoration-color var(--theme-transition);
+		color: var(--accent);
+		text-decoration: underline;
+		transition: color 0.3s ease;
 	}
 
-	.back-link:hover,
-	.back-link:focus,
 	.content :global(a:hover),
 	.content :global(a:focus) {
-		text-decoration-color: currentColor;
+		color: var(--accent-dark);
 	}
 
 	@media (min-width: 50em) {
-		.back-link {
-			display: block;
-			align-self: flex-start;
-		}
-
 		.details {
 			flex-direction: row;
 			gap: 2.5rem;
+			align-items: center;
+		}
+
+		.description {
+			font-size: var(--text-lg);
 		}
 
 		.content :global(blockquote) {
-			font-size: var(--text-2xl);
+			font-size: var(--text-xl);
+		}
+
+		.image-gallery {
+			grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
 		}
 	}
 </style>

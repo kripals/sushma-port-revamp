@@ -1,13 +1,13 @@
 ---
-title: Ananda Kuti Vihar: A Harmonious Fusion of Culture and Architecture
+title: Ananda Kuti Vihar - A Harmonious Fusion of Culture and Architecture
 publishDate: 2023-02-10 00:00:00
 img: [
-      "projects/ananda-kuti-vihar/pic-1.jpg",
-      "projects/ananda-kuti-vihar/pic-2.jpg",
-      "projects/ananda-kuti-vihar/pic-3.jpg",
-      "projects/ananda-kuti-vihar/pic-5.jpg",
-      "projects/ananda-kuti-vihar/pic-6.jpg",
-      "projects/ananda-kuti-vihar/pic-7.jpg",
+      "/assets/projects/ananda-kuti-vihar/pic-1.jpg",
+      "/assets/projects/ananda-kuti-vihar/pic-2.jpg",
+      "/assets/projects/ananda-kuti-vihar/pic-3.jpg",
+      "/assets/projects/ananda-kuti-vihar/pic-5.jpg",
+      "/assets/projects/ananda-kuti-vihar/pic-6.jpg",
+      "/assets/projects/ananda-kuti-vihar/pic-7.jpg"
 ]
 img_alt: [
       "Main hall of Ananda Kuti Vihar featuring intricate traditional designs",

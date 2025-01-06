@@ -2,12 +2,12 @@
 title: Contemporary Interior Design Concept – Elevating Spaces with Style and Functionality
 publishDate: 2021-08-15 00:00:00
 img: [
-      "projects/3d-rendering-interior/pic-14.jpg",
-      "projects/3d-rendering-interior/pic-4.jpg",
-      "projects/3d-rendering-interior/pic-5.jpg",
-      "projects/3d-rendering-interior/pic-8.jpg",
-      "projects/3d-rendering-interior/pic-17.jpg",
-      "projects/3d-rendering-interior/pic-16.jpg",
+      "/assets/projects/3d-rendering-interior/pic-14.jpg",
+      "/assets/projects/3d-rendering-interior/pic-4.jpg",
+      "/assets/projects/3d-rendering-interior/pic-5.jpg",
+      "/assets/projects/3d-rendering-interior/pic-8.jpg",
+      "/assets/projects/3d-rendering-interior/pic-17.jpg",
+      "/assets/projects/3d-rendering-interior/pic-16.jpg"
 ]
 img_alt: [
       "Living room with modern furniture and elegant lighting",

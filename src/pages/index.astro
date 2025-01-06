@@ -35,9 +35,10 @@ const projects = (await getCollection('work'))
 					align="start"
 				>
 					<div class="roles">
-						<Pill><Icon icon="building" size="1.33em" /> Architectural Designer</Pill>
-						<Pill><Icon icon="microphone-stage" size="1.33em" /> Architectural Designer</Pill>
-						<Pill><Icon icon="cube" size="1.33em" /> 3D Visualization Expert</Pill>
+						<Pill><Icon icon="building" size="1.33em" /> Licensed Architect (NEPAL)</Pill>
+						<Pill><Icon icon="microphone-stage" size="1.33em" /> Certified Revit User</Pill>
+						<Pill><Icon icon="cube" size="1.33em" /> 3D Rendering Specialist</Pill>
+						<Pill><Icon icon="palette" size="1.33em" /> Design Innovator</Pill>
 					</div>
 				</Hero>
 
@@ -46,6 +47,7 @@ const projects = (await getCollection('work'))
 					width="480"
 					height="620"
 					src="/profile.jpg"
+					class="rounded-lg shadow-lg"
 				/>
 			</header>
 
@@ -79,27 +81,39 @@ const projects = (await getCollection('work'))
 				</div>
 			</section>
 
-			<!-- <section class="section with-background bg-variant">
+			<section class="section with-background bg-variant">
 				<header class="section-header stack gap-2 lg:gap-4">
-					<h3>Mentions</h3>
+					<h3>Certifications & Licenses</h3>
 					<p>
-						I have been fortunate enough to receive praise for my work in several publications. Take
-						a look below to learn more.
+						Below are some of the certifications and licenses I’ve earned, reflecting my commitment to continuous learning and professional excellence.
 					</p>
 				</header>
-
+			
 				<div class="gallery">
 					<Grid variant="small">
-						{
-							['Medium', 'BuzzFeed', 'The Next Web', 'awwwards.', 'TechCrunch'].map((brand) => (
-								<li class="mention-card">
-									<p>{brand}</p>
-								</li>
-							))
-						}
+						{[
+							{
+								logo: '/assets/licenses/nea.png',
+								title: 'Licensed Architect - Nepal',
+								description: 'Certified by the Nepal Engineering Council as a registered architect.'
+							},
+							{
+								logo: '/assets/licenses/udemy-logo.png',
+								title: 'Autodesk Revit Certification',
+								description: 'Completed professional training in Revit through Udemy.'
+							},
+						].map((cert, index) => (
+							<li class="cert-card" key={index}>
+								<img src={cert.logo} alt={`${cert.title} logo`} class="cert-logo" />
+								<div class="cert-details">
+									<h4 class="cert-title">{cert.title}</h4>
+									<p class="cert-description">{cert.description}</p>
+								</div>
+							</li>
+						))}
 					</Grid>
 				</div>
-			</section> -->
+			</section>
 		</main>
 
 		<ContactCTA />
@@ -111,19 +125,65 @@ const projects = (await getCollection('work'))
 		display: flex;
 		flex-direction: column;
 		align-items: center;
+		text-align: center;
 		gap: 2rem;
 	}
-
+	
 	.roles {
-		display: none;
+		display: flex;
+		gap: 0.5rem;
+		flex-wrap: wrap;
+		justify-content: center;
+		margin-top: 1rem;
 	}
-
+	
 	.hero img {
-		aspect-ratio: 5 / 4;
+		aspect-ratio: 4 / 5;
 		object-fit: cover;
-		object-position: top;
 		border-radius: 1.5rem;
 		box-shadow: var(--shadow-md);
+	}
+	
+	.cert-card {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		text-align: center;
+		gap: 1rem;
+		padding: 1.5rem;
+		background: #f9f9f9;
+		border-radius: 0.75rem;
+		box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+		transition: transform 0.2s, box-shadow 0.2s;
+	}
+	
+	.cert-card:hover {
+		transform: translateY(-5px);
+		box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+	}
+	
+	.cert-logo {
+		width: 80px;
+		height: auto;
+		border-radius: 0.375rem;
+	}
+	
+	.cert-title {
+		font-size: 1.25rem;
+		font-weight: bold;
+		color: #333;
+	}
+	
+	.cert-description {
+		font-size: 0.875rem;
+		color: #555;
+	}
+	
+	.gallery {
+		display: flex;
+		flex-wrap: wrap;
+		gap: 2rem;
+		justify-content: center;
 	}
 
 	@media (min-width: 50em) {
