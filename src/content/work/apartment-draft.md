@@ -2,12 +2,12 @@
 title: Residential Building - Drafting Excellence
 publishDate: 2023-02-10 00:00:00
 img: [
-      "/assets/projects/apartment_draft/pic_1.jpg",
-      "/assets/projects/apartment_draft/pic_2.jpg",
-      "/assets/projects/apartment_draft/pic_3.jpg",
-      "/assets/projects/apartment_draft/pic_4.jpg",
-      "/assets/projects/apartment_draft/pic_5.jpg",
-      "/assets/projects/apartment_draft/pic_6.jpg"
+      "/assets/projects/apartment-draft/pic_1.jpg",
+      "/assets/projects/apartment-draft/pic_2.jpg",
+      "/assets/projects/apartment-draft/pic_3.jpg",
+      "/assets/projects/apartment-draft/pic_4.jpg",
+      "/assets/projects/apartment-draft/pic_5.jpg",
+      "/assets/projects/apartment-draft/pic_6.jpg"
 ]
 img_alt: [
       "Ground floor plan showcasing meticulous drafting of a residential layout",

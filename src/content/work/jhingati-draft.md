@@ -2,10 +2,10 @@
 title: Traditional Residential Elevations - Drafting Excellence
 publishDate: 2023-02-10 00:00:00
 img: [
-      "/assets/projects/jhingati_draft/pic_1.jpg",
-      "/assets/projects/jhingati_draft/pic_2.jpg",
-      "/assets/projects/jhingati_draft/pic_3.jpg",
-      "/assets/projects/jhingati_draft/pic_4.jpg"
+      "/assets/projects/jhingati-draft/pic_1.jpg",
+      "/assets/projects/jhingati-draft/pic_2.jpg",
+      "/assets/projects/jhingati-draft/pic_3.jpg",
+      "/assets/projects/jhingati-draft/pic_4.jpg"
 ]
 img_alt: [
       "West elevation showcasing detailed roof structures and traditional architectural elements",
