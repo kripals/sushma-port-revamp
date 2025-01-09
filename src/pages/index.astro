@@ -102,6 +102,11 @@ const projects = (await getCollection('work'))
 								title: 'Autodesk Revit Certification',
 								description: 'Completed professional training in Revit through Udemy.'
 							},
+							{
+								logo: '/assets/licenses/bcin.jpeg',
+								title: 'BCIN Certification - Small Buildings',
+								description: 'Successfully obtained BCIN (Building Code Identification Number) Certification, specializing in the design and construction of small buildings, ensuring compliance with the Ontario Building Code.'
+							},
 						].map((cert, index) => (
 							<li class="cert-card" key={index}>
 								<img src={cert.logo} alt={`${cert.title} logo`} class="cert-logo" />
