@@ -1,0 +1,35 @@
+---
+const resumeLink = '/assets/resume/your-resume.pdf'; // Replace with the actual path to your resume file
+const homePageLink = '/'; // Replace with your actual home page route
+---
+
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Download Resume</title>
+  <script>
+    // Automatically download the resume and redirect to the home page
+    window.onload = () => {
+      const resumeLink = "/assets/resume/Resume-Sushma-Shrestha..pdf";
+      const homePageLink = "/";
+
+      // Create an invisible link to trigger the download
+      const anchor = document.createElement('a');
+      anchor.href = resumeLink;
+      anchor.download = resumeLink.split('/').pop(); // Extract filename for download
+      document.body.appendChild(anchor);
+      anchor.click();
+      anchor.remove();
+
+      // Redirect to the home page after a short delay
+      setTimeout(() => {
+        window.location.href = homePageLink;
+      }, 500); // Adjust delay time if needed
+    };
+  </script>
+</head>
+<body>
+  <p>Redirecting...</p>
+</body>
+</html>

@@ -26,6 +26,7 @@ export async function getStaticPaths() {
 
 const { entry } = Astro.props;
 const { Content } = await render(entry);
+
 ---
 
 <BaseLayout title={entry.data.title} description={entry.data.description}>
@@ -54,13 +55,20 @@ const { Content } = await render(entry);
 					{entry.data.img &&
 						<div class="image-gallery">
 							{entry.data.img.map((image, index) => (
-								<img
-									key={index}
-									src={image}
-									alt={entry.data.img_alt && entry.data.img_alt[index] ? entry.data.img_alt[index] : ''}
-									loading="lazy"
-									decoding="async"
-								/>
+								<a
+									href={image}
+									class="glightbox"
+									data-glightbox={`title: ${entry.data.img_alt && entry.data.img_alt[index] ? entry.data.img_alt[index] : 'Image'}`}
+								>
+									<img
+										key={index}
+										src={image}
+										alt={entry.data.img_alt && entry.data.img_alt[index] ? entry.data.img_alt[index] : ''}
+										loading="lazy"
+										decoding="async"
+										class="gallery-img"
+									/>
+								</a>
 							))}
 						</div>
 					}
@@ -73,6 +81,18 @@ const { Content } = await render(entry);
 		<ContactCTA />
 	</div>
 </BaseLayout>
+
+<script>
+	document.addEventListener('DOMContentLoaded', () => {
+		GLightbox({
+			selector: '.glightbox', // Matches the `a` tags in the gallery
+			touchNavigation: true, // Enables swipe for touch devices
+			loop: true, // Enables looping through images
+			closeButton: true, // Adds a close button
+			openEffect: 'fade', // Adds a fade effect when opening
+		});
+	});
+</script>
 
 <style>
 	header {
@@ -126,77 +146,12 @@ const { Content } = await render(entry);
 		border-radius: 1rem;
 		box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 		background-color: var(--gray-900);
+		cursor: pointer;
 		transition: transform 0.3s ease, box-shadow 0.3s ease;
 	}
 
 	.image-gallery img:hover {
 		transform: scale(1.05);
 		box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
-	}
-
-	.content {
-		max-width: 65ch;
-		margin-inline: auto;
-	}
-
-	.content > :global(* + *) {
-		margin-top: 1rem;
-	}
-
-	.content :global(h1),
-	.content :global(h2),
-	.content :global(h3),
-	.content :global(h4),
-	.content :global(h5) {
-		margin: 1.5rem 0;
-	}
-
-	.content :global(img) {
-		border-radius: 1rem;
-		box-shadow: var(--shadow-sm);
-		background: var(--gradient-subtle);
-		border: 1px solid var(--gray-800);
-	}
-
-	.content :global(blockquote) {
-		font-size: var(--text-md);
-		font-family: var(--font-brand);
-		font-weight: 600;
-		line-height: 1.1;
-		padding-inline-start: 1.5rem;
-		border-inline-start: 0.25rem solid var(--accent-dark);
-		color: var(--gray-0);
-		margin: 2rem 0;
-	}
-
-	.content :global(a) {
-		color: var(--accent);
-		text-decoration: underline;
-		transition: color 0.3s ease;
-	}
-
-	.content :global(a:hover),
-	.content :global(a:focus) {
-		color: var(--accent-dark);
-	}
-
-	@media (min-width: 50em) {
-		.details {
-			flex-direction: row;
-			gap: 2.5rem;
-			align-items: center;
-		}
-
-		.description {
-			font-size: var(--text-lg);
-		}
-
-		.content :global(blockquote) {
-			font-size: var(--text-xl);
-		}
-
-		.image-gallery {
-			grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-		}
 	}
 </style>

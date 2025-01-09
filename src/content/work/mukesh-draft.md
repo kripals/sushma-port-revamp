@@ -1,6 +1,6 @@
 ---
 title: Residential Drafting Project - Precision and Detail
-publishDate: 2023-02-10 00:00:00
+publishDate: 2024-02-10 00:00:00
 img: [
       "/assets/projects/mukesh-draft/pic_10.jpg",
       "/assets/projects/mukesh-draft/pic_1.jpg",
@@ -14,6 +14,7 @@ img: [
       "/assets/projects/mukesh-draft/pic_9.jpg",
 ]
 img_alt: [
+      "Full drawing set overview with all plans and elevations",
       "Site plan showcasing property layout and utility connections",
       "First floor plan with room layout and dimensions",
       "Second floor plan displaying room arrangements and measurements",
@@ -23,7 +24,6 @@ img_alt: [
       "North elevation displaying facade and proportions",
       "South elevation emphasizing vertical elements",
       "Section X-X showcasing internal structural details",
-      "Full drawing set overview with all plans and elevations"
 ]
 description: |
   This project highlights the meticulous drafting of a residential property, focusing on precision and clarity in architectural plans. The drafting work ensures adherence to construction standards and facilitates seamless project execution.
