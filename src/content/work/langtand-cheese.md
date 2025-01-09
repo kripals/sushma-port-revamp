@@ -1,6 +1,6 @@
 ---
 title: Langtang Cheese Factory - A Blend of Tradition and Modern Design
-publishDate: 2023-07-18 00:00:00
+publishDate: 2019-07-18 00:00:00
 img: [
       "/assets/projects/langtang-cheese-factory/pic-7.jpg",
       "/assets/projects/langtang-cheese-factory/pic-4.jpg",

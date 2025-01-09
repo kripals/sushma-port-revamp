@@ -1,6 +1,6 @@
 ---
 title: Children's Museum Design – A Place for Imagination and Exploration
-publishDate: 2024-01-10 00:00:00
+publishDate: 2019-01-10 00:00:00
 img: [
       "/assets/projects/thesis/pic-2.jpg",
       "/assets/projects/thesis/pic-4.jpg",

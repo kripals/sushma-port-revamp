@@ -2,6 +2,7 @@
 title: Residential Drafting Project - Precision and Detail
 publishDate: 2023-02-10 00:00:00
 img: [
+      "/assets/projects/mukesh-draft/pic_10.jpg",
       "/assets/projects/mukesh-draft/pic_1.jpg",
       "/assets/projects/mukesh-draft/pic_2.jpg",
       "/assets/projects/mukesh-draft/pic_3.jpg",
@@ -11,7 +12,6 @@ img: [
       "/assets/projects/mukesh-draft/pic_7.jpg",
       "/assets/projects/mukesh-draft/pic_8.jpg",
       "/assets/projects/mukesh-draft/pic_9.jpg",
-      "/assets/projects/mukesh-draft/pic_10.jpg"
 ]
 img_alt: [
       "Site plan showcasing property layout and utility connections",

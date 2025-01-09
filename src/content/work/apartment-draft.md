@@ -1,6 +1,6 @@
 ---
 title: Residential Building - Drafting Excellence
-publishDate: 2023-02-10 00:00:00
+publishDate: 2021-02-10 00:00:00
 img: [
       "/assets/projects/apartment-draft/pic_1.jpg",
       "/assets/projects/apartment-draft/pic_2.jpg",
